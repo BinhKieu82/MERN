@@ -1,0 +1,19 @@
+export const CREATE_CITIES = 'CREATE_CITIES';
+export const CREATE_USERS = 'CREATE_USERS';
+export const FETCH_CITIES = 'FETCH_CITIES';
+export const FETCH_USERS = 'FETCH_USERS';
+export const FETCH_ICONS = 'FETCH_ICONS';
+export const EDIT_CITIES = 'EDIT_CITIES';
+export const EDIT_USERS = 'EDIT_USERS';
+export const UPDATE_CITIES = 'UPDATE_CITIES';
+export const UPDATE_USERS = 'UPDATE_USERS';
+export const DELETE_CITIES = 'DELETE_CITIES';
+export const DELETE_USERS = 'DELETE_USERS';
+export const FILTER_CITIES = 'FILTER_CITIES';
+export const FILTER_USERS = 'FILTER_USERS';
+export const SEARCH_CITIES = 'SEARCH_CITIES';
+export const SEARCH_USERS = 'SEARCH_USERS';
+export const FETCH_CITIES_ERR = 'FETCH_CITIES_ERR';
+export const FETCH_USERS_ERR = 'FETCH_USERS_ERR';
+export const FETCH_ICONS_ERR = 'FETCH_ICONS_ERR';
+
