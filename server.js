@@ -24,12 +24,12 @@ app.use(bodyParser.raw({type: "*/*"}));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
-var db = mongoose.connection;
+//var db = mongoose.connection;
 
-let data = [
-  {description: 'a nice boat', price: 5000},
-  {description: 'a nice hat', price: 45}
-]
+// let data = [
+//   {description: 'a nice boat', price: 5000},
+//   {description: 'a nice hat', price: 45}
+// ]
 
 // let data = app.get('/search', (req, res) =>{
 //   collection.find({}).toArray((err, result) =>{
@@ -40,15 +40,15 @@ let data = [
 //   });
 // });
 
-app.post('/search', function(req, res) {
-  let parsed = JSON.parse(req.body)
-  let searchWord = parsed.query
-  //let dbo = db.bd ('test');
-  let results = data.filter(function(item){
-    return item.description.includes(searchWord)
-  })
-  res.send(JSON.stringify(results))
-})
+// app.post('/search', function(req, res) {
+//   let parsed = JSON.parse(req.body)
+//   let searchWord = parsed.query
+//   //let dbo = db.bd ('test');
+//   let results = data.filter(function(item){
+//     return item.description.includes(searchWord)
+//   })
+//   res.send(JSON.stringify(results))
+// })
 
 app.use('/landing', landingRoute);
 app.use('/cities', citiesRoute);
